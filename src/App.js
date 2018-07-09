@@ -1,13 +1,16 @@
-import React, { Component } from 'react';
-
+import React, { Component, Fragment } from 'react';
 import { hot } from 'react-hot-loader';
+
+import Navbar from './components/Navbar';
+import Content from './components/Content';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1>Hello World</h1>
-      </div>
+      <Fragment>
+        <Navbar />
+        <Content />
+      </Fragment>
     );
   }
 }
